@@ -19,3 +19,33 @@ let epicPhrase = hello + ' ' + world;
 console.log(epicPhrase);
 let epicPhrase2 = `${hello} ${world}`;
 console.log(epicPhrase2);
+
+// Multilinea
+let lorem = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. \n"
++ "otra frase epica que necesitamos";
+ //es6
+let lorem2 = `otra frase epica que necesitamos
+ahora es otra frase epica
+`;
+
+console.log(lorem);
+console.log(lorem2);
+
+//Destructuracion de elementos
+let person = {
+    'name': 'oscar',
+    'age': 32,
+    'country': 'MX'
+}
+console.log(person.name, person.age);
+
+let { name, age, country} = person;
+console.log(name, age);
+
+// Operador de propagacion - nos permite expandir de ciertas situacion varios elementos
+// Ciertps elementos en arreglos y unirlos en uno solo para poderlo presentar
+let team1 = ['Oscar','Julian','Ricardo'];
+let team2 = ['Valeria','Yesica','Camila']; 
+
+let education = ['David', ...team1, ...team2];
+console.log(education);
