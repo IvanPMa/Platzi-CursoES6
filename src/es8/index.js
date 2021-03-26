@@ -24,4 +24,10 @@ console.log(values.length);
 const string = 'hello';
 console.log(string.padStart(7,'hi'));
 console.log(string.padEnd(12,' ------')); 
-console.log('food'.padEnd(12,'  ------'))
+console.log('food'.padEnd(12,'  ------'));
+
+//  Trailing-Comas - Forma de establecer en un objeto con una coma que puede o no haber otro valor
+const obje = {
+    name : 'Ivan',
+}
+
