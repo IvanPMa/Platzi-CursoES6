@@ -133,3 +133,21 @@ console.log(calc.sum2(2,2));
 //Modulos
 import {hello} from './module';
 hello();
+
+
+//Generators - es una funcion especial que retorna una serie de valores segun el algoritmo
+
+function* helloWorld() {
+    if(true){
+        yield 'Hello, '; // Guarda este estado de manera interna
+    }
+    if (true){
+        yield 'World'; // Segundo elemento que va a ser llamado cuando sea ejecutado el sig valor
+
+    } 
+};
+
+const generatorHello = helloWorld();
+console.log(generatorHello.next().value);// step by step - next()
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
