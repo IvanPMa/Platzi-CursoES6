@@ -60,3 +60,5 @@ console.log(education);
     console.log(globalLet);
 }
 console.log(globalVar);
+
+const a = 'b';
